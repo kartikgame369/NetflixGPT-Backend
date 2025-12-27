@@ -10,5 +10,5 @@ const router = Router();
 
 router.post("/register", registerUser);
 router.post("/login", loginUser);
-router.post("/logout", verifyJWT,logoutUser)
+router.post("/logout", verifyJWT,logoutUser);
 export default router;

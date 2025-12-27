@@ -1,7 +1,10 @@
 import express from "express";
 import cors from "cors";
-import userRouter from "./src/routes/user.routes.js";
 import cookieParser from "cookie-parser";
+
+import userRouter from "./src/routes/user.routes.js";
+import moviesRouter from "./src/routes/movies.routes.js";
+
 const app = express();
 
 // CORS
@@ -22,5 +25,6 @@ app.use(cookieParser());
 
 // Routes
 app.use("/api/v1/users", userRouter);
+app.use("/api/v1/movies", moviesRouter);
 
 export { app };
