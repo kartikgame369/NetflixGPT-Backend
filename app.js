@@ -26,5 +26,6 @@ app.use(cookieParser());
 // Routes
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/movies", moviesRouter);
+// app.use("/api/v1/movies/posters", moviesRouter);
 
 export { app };
